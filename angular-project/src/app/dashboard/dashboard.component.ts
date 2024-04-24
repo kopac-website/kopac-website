@@ -30,7 +30,7 @@ import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 })
 export class DashboardComponent implements OnInit {
   private testService = inject(TestService);
-  private destroyRef = inject(DestroyRef)
+  private destroyRef = inject(DestroyRef);
 
   dataSource: MatTableDataSource<string>;
 
