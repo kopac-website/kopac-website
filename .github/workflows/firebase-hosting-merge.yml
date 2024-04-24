@@ -24,3 +24,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_OPENLAB_WEB_APP }}'
           channelId: live
           projectId: openlab-web-app
+          entryPoint: ./angular-project
