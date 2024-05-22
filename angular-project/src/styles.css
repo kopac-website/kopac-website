@@ -2,3 +2,35 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+button{
+    padding: 10px 25px;
+    border-radius: 6px;
+    background-color: #008000;
+    color: white;
+    border: none;
+    transition: 0.2s ease-in-out;
+    border: 1px solid transparent;
+}
+button:hover{
+    background-color: #006600;
+    color: #f2f2f2;
+    border: 1px solid white;
+}
+html{
+    position: relative;
+}
+html::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://tryhardguides.com/wp-content/uploads/2022/05/featured-minecraft-news-1.jpg);
+    background-position: center;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
