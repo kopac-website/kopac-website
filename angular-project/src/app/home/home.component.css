@@ -1,4 +1,4 @@
-.content{
+.first-part{
     position: relative;
     width: 100%;
     height: 100%;
@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
 }
-.content::before{
+.first-part::before{
     content: "";
     position: absolute;
     top: 0;
@@ -45,12 +45,12 @@
     align-items: center;
     justify-content: center;
     margin: 2px;
-    transition: background-color 0.3s;
+    transition: background-color 0.8s;
 }
 .option-1, .option-2, .option-3{
     margin: 10px;
     background-color: transparent;
-    transition: background-color 0.3s;
+    transition: background-color 0.8s;
     border-radius: 20px;
 }
 .option-1:hover{
@@ -79,12 +79,12 @@
     margin-left: 4px;
     margin-right: 4px;
 }
-.about-server-text{
+.about-server-text, .members-list{
     margin-left: 50px;
     margin-right: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
-.about-server-text h1{
+.second-part h1{
     font-weight: bold;
     font-size: 30px;
 }
