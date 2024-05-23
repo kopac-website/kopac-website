@@ -45,12 +45,12 @@
     align-items: center;
     justify-content: center;
     margin: 2px;
-    transition: background-color 0.8s;
+    transition: background-color 0.2s;
 }
 .option-1, .option-2, .option-3{
     margin: 10px;
     background-color: transparent;
-    transition: background-color 0.8s;
+    transition: background-color 0.2s;
     border-radius: 20px;
 }
 .option-1:hover{
@@ -87,4 +87,61 @@
 .second-part h1{
     font-weight: bold;
     font-size: 30px;
+}
+.members{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 16px;
+}
+.member-text{
+    padding: 20px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.member img{
+    padding: 20px;
+    max-width: 15%;
+    margin-right: 15px;
+}
+.member{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+p{
+    font-size: larger;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h2{
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .member img{
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .members-list{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .member {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+        margin: 0;
+    }
+    .members{
+        justify-content: flex-start;
+    }
 }

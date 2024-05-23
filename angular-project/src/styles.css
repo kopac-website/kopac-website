@@ -34,4 +34,7 @@ html::before{
     filter: brightness(50%);
     z-index: -1;
 }
+html{
+    scroll-behavior: smooth;
+}
 
