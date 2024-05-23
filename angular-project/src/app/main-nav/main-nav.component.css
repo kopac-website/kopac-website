@@ -1,5 +1,5 @@
 nav{
-  z-index: 9999;
+  z-index: 1000;
   background-image: linear-gradient(black, transparent);
   color: white;
   width: 100vw;
@@ -8,29 +8,22 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-nav span{
-  padding: 20px 35px;
-  font-size: 25px;
-  color: white;
-  cursor: default;
-  font-weight: bold;
-}
 nav img{
   margin-top: 10px;
   transition: filter 0.5s;
 }
-nav img:hover{
-  filter: brightness(60%);
-}
 nav a{
-  padding: 20px 35px;
+  text-decoration: none;
+}
+.nav-content span{
+  padding: 10px 17.5px;
   font-size: large;
   color: white;
   text-decoration: none;
   border-bottom: 0px solid transparent;
   transition: border-bottom 0.5s, color 0.5s;
 }
-nav a:hover{
+.nav-content span:hover{
   cursor: pointer;
   color: #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
@@ -38,3 +31,13 @@ nav a:hover{
 .nav-content{
   float: right;
 }
+.nav-content a{
+  padding: 10px 17.5px;
+}
+.logo{
+  padding: 20px 35px;
+}
+.logo img:hover{
+  filter: brightness(60%);
+}
+
