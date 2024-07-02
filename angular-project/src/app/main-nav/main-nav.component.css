@@ -28,14 +28,19 @@ nav a{
 .nav-content{
   float: right;
 }
-.logo, .profile-picture{
+.logo, .profile-picture, .menu-icon{
   padding: 20px 35px;
 }
 .logo img{
   margin-top: 10px;
   transition: filter 0.5s;
 }
-.logo img:hover{
+.menu-icon{
+  display: none;
+  visibility: hidden;
+  transition: filter 0.5s;
+}
+.logo img:hover, .menu-icon:hover{
   filter: brightness(60%);
 }
 .profile-picture img{
@@ -45,4 +50,23 @@ nav a{
 .profile-picture img:hover{
   filter: brightness(60%);
 }
-
+@media (min-width: 1450px){
+  .nav-content span{
+      font-size: 20px;
+  }
+  h2{
+      font-size: 24px;
+  }
+  h3{
+      font-size: 18px;
+  }
+}
+@media (max-width: 730px){
+  .nav-content, .profile-picture{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+    visibility: visible;
+  }
+}

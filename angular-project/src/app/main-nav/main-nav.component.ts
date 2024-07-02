@@ -20,6 +20,7 @@ import { NgClass, NgIf } from '@angular/common';
 export class MainNavComponent {
   authService = inject(AuthenticationService);
   private router = inject(Router);
+  navBarFixed: boolean = false;
 
   logout() {
     this.authService.logout();

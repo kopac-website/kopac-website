@@ -26,6 +26,10 @@
     text-align: center;
     width: 50%;
     padding-bottom: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
 }
 .title-text h1{
     font-weight: bold;
@@ -86,11 +90,11 @@
 }
 .second-part h1{
     font-weight: bold;
-    font-size: 30px;
+    font-size: 26px;
 }
 .members{
     display: flex;
-    justify-content: center;
+    justify-content:first baseline;
     flex-wrap: wrap; 
     gap: 16px;
 }
@@ -102,7 +106,7 @@
 }
 .member img{
     padding: 20px;
-    max-width: 15%;
+    max-width: 100%;
     margin-right: 15px;
 }
 .member{
@@ -111,7 +115,7 @@
     justify-content: center;
     box-sizing: border-box;
     width: 100%;
-    max-width: 400px;
+    max-width: 30%;
     background-color: #f9f9f9;
     border-radius: 8px;
 }
@@ -125,23 +129,72 @@ a{
 h2{
     font-weight: bold;
 }
-@media (max-width: 600px) {
-    .member img{
-        margin-right: 0;
-        margin-bottom: 10px;
+@media (min-width: 1450px){
+    p{
+        font-size: 19px;
     }
-    .members-list{
-        margin-left: 0px;
-        margin-right: 0px;
+    h2{
+        font-size: 24px;
     }
-    .member {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        max-width: 100%;
-        margin: 0;
+    h3{
+        font-size: 18px;
     }
-    .members{
-        justify-content: flex-start;
+    .second-part h1{
+        font-size: 30px;
     }
 }
+@media (max-width: 1390px){
+    .members{
+        justify-content: space-around;
+    }
+    .member{
+        max-width: 30%;
+    }
+}
+@media (max-width: 1250px){
+    .member{
+        max-width: 450px;
+    }
+}
+@media (max-width: 1080px){
+    .members{
+        justify-content: center;
+    }
+    .member{
+        max-width: 400px;
+    }
+}
+@media (max-width: 976px){
+    .member{
+        width: 100%;
+        max-width: 100%;
+    }
+}
+@media (max-width: 730px){
+    .kopac-title{
+        width: 320px;
+        height: 90px;
+    }
+    .select img{
+        width: 30px;
+        height: 30px;
+    }
+    .title-text{
+        gap: 10px;
+    }
+    .member{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .member img{
+        margin:0;
+        margin-top: 10px;
+    }
+    .about-server-text, .members-list{
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-bottom: 70px;
+    }
+}
+  
