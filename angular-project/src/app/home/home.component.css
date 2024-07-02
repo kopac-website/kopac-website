@@ -88,9 +88,12 @@
     margin-right: 50px;
     padding-bottom: 70px;
 }
+.second-part{
+    padding-top: 40px;
+}
 .second-part h1{
     font-weight: bold;
-    font-size: 26px;
+    font-size: 25px;
 }
 .members{
     display: flex;
@@ -129,15 +132,18 @@ a{
 h2{
     font-weight: bold;
 }
+.second-part{
+    background-color: white;
+}
 @media (min-width: 1450px){
     p{
-        font-size: 19px;
+        font-size: 18px;
     }
     h2{
-        font-size: 24px;
+        font-size: 21px;
     }
     h3{
-        font-size: 18px;
+        font-size: 15px;
     }
     .second-part h1{
         font-size: 30px;

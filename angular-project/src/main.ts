@@ -40,7 +40,8 @@ bootstrapApplication(AppComponent, {
       provideRouter([
         { path: '', component: HomeComponent},
         { path: 'login', component: LoginComponent},
-        { path: 'register', component: RegistrationComponent}
+        { path: 'register', component: RegistrationComponent},
+        { path: 'home', component: HomeComponent}
       ])
     ]
 })
