@@ -22,8 +22,14 @@ export class MainNavComponent {
   private router = inject(Router);
   navBarFixed: boolean = false;
 
+  isActive: boolean = false;
+
   logout() {
     this.authService.logout();
     this.router.navigate(['/login']);
+  }
+
+  toggleSidebar(){
+    this.isActive = !this.isActive;
   }
 }
