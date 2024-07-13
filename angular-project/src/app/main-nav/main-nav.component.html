@@ -4,7 +4,7 @@
     <div class="nav-content">
       <a href="#"><span>Domov</span></a>
       <a href="http://ms33.hicoria.cloud:59368/" target="_blank"><span>Dynmapa</span></a>
-      <a href="#"><span>Nábor</span></a>
+      <a [routerLink]="['/form']"><span>Nábor</span></a>
     </div>
     @if(!authService.isAuthenticated()){
       <a [routerLink]="['/login']" class="profile-picture"><img src="https://freesvg.org/img/abstract-user-flat-4.png" alt="profile-picture" height="55" width="55"></a>

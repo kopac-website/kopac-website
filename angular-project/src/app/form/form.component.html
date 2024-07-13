@@ -1,0 +1,28 @@
+<title>Login</title>
+<div class="content">
+  <form class="form" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <img src="../../assets/kopac-icon.ico" alt="kopac-icon" height="55" width="55">
+    <div class="field">
+      <label>Minecraft username:</label><br>
+      <div class="input-field">
+      <input type="text" formControlName="mc_nickname" placeholder="Minecrafter" required>
+    </div>
+    </div>
+
+    <div class="field">
+      <label>Discord tag:</label><br>
+      <div class="input-field">
+      <input type="text" formControlName="dc_tag" placeholder="Minecrafter#1255" required>
+    </div>
+    </div>
+
+    <div class="field">
+        <label>Write down a reason why we should accept your request:</label><br>
+        <div class="input-field">
+        <textarea type="text" formControlName="reason" placeholder="I like vanilla survival..."></textarea>
+    </div>
+    </div>
+
+    <button type="submit" (click)="onSubmit()">Login</button>
+  </form>
+</div>

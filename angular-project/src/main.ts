@@ -12,6 +12,7 @@ import { errorHandlerInterceptor } from './app/api-authorization/error-handler.i
 import { authGuard } from './app/api-authorization/auth.guard';
 import { jwtInterceptor } from './app/api-authorization/jwt.interceptor';
 import { HomeComponent } from './app/home/home.component';
+import { FormComponent } from './app/form/form.component';
 
 export function getBaseUrl() {
   return 'https://localhost:7186/api';
@@ -41,7 +42,8 @@ bootstrapApplication(AppComponent, {
         { path: '', component: HomeComponent},
         { path: 'login', component: LoginComponent},
         { path: 'register', component: RegistrationComponent},
-        { path: 'home', component: HomeComponent}
+        { path: 'home', component: HomeComponent},
+        { path: 'form', component: FormComponent}
       ])
     ]
 })

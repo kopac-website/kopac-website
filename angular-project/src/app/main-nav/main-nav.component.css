@@ -27,6 +27,7 @@ nav a{
 }
 .nav-content{
   float: right;
+  padding-right: 35px;
 }
 .logo, .profile-picture, .menu-icon{
   padding: 20px 35px;
@@ -120,7 +121,7 @@ nav a{
       font-size: 18px;
   }
 }
-@media (max-width: 730px){
+@media (max-width: 783px){
   .nav-content, .profile-picture{
     display: none;
   }
@@ -137,7 +138,7 @@ nav a{
     margin-top: 10px;
   }
 }
-@media (min-width: 730px){
+@media (min-width: 783px){
   .menu-icon, .sidebar{
     display: none;
   }

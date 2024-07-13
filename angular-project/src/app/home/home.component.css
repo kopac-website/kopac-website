@@ -137,16 +137,16 @@ h2{
 }
 @media (min-width: 1450px){
     p{
-        font-size: 18px;
+        font-size: 17px;
     }
     h2{
-        font-size: 21px;
+        font-size: 20px;
     }
     h3{
-        font-size: 15px;
+        font-size: 14px;
     }
     .second-part h1{
-        font-size: 30px;
+        font-size: 28px;
     }
 }
 @media (max-width: 1390px){

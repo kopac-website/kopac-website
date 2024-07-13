@@ -13,5 +13,6 @@ namespace AspNetCoreAPI.Data
         }
 
         public DbSet<PlayersModel> Players { get; set; }
+        public DbSet<FormModel> Requests { get; set; }
     }
 }
