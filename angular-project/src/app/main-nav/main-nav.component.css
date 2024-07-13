@@ -41,14 +41,20 @@ nav a{
   transition: filter 0.5s;
 }
 .logo img:hover, .menu-icon:hover{
-  filter: brightness(60%);
+  filter: brightness(70%);
+}
+.profile-picture{
+  margin-right: 25px;
 }
 .profile-picture img{
   margin-bottom: 5px;
   transition: filter 0.5s;
 }
-.profile-picture img:hover{
-  filter: brightness(60%);
+.closebtn img{
+  transition: filter 0.5s;
+}
+.profile-picture img:hover, .closebtn img:hover{
+  filter: brightness(70%);
 }
 .sidebar{
   height: 100%;
@@ -62,7 +68,7 @@ nav a{
   display: flex;
   justify-content:center;
   align-items: flex-start;
-  padding-top: 15px;
+  padding-top: 10px;
   background-image: linear-gradient(to left, black, transparent);
 }
 .sidebar a{
@@ -71,14 +77,16 @@ nav a{
   font-size: large;
   color: white;
   display: block;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s, color 0.5s;
+  transition: color 0.5s;
   text-align: center;
 }
-.sidebar a:hover{
+.sidebar span{
+  transition: color 0.5s;
+  color: white;
+}
+.sidebar span:hover{
   cursor: pointer;
   color: #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
 }
 .sidebar-content{
   display: flex;
@@ -93,6 +101,7 @@ nav a{
   flex-direction: row;
   justify-content: space-between;
   gap: 0px;
+  height: 50px;
 }
 .closebtn:hover{
   cursor: pointer;
@@ -122,6 +131,10 @@ nav a{
   .not-visible{
     display: none;
     visibility: hidden;
+  }
+  .profile-picture img{
+    margin-bottom: 0;
+    margin-top: 10px;
   }
 }
 @media (min-width: 730px){

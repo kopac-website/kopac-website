@@ -6,7 +6,12 @@
       <a href="http://ms33.hicoria.cloud:59368/" target="_blank"><span>Dynmapa</span></a>
       <a href="#"><span>Nábor</span></a>
     </div>
-    <a [routerLink]="['/login']"><span class="profile-picture"><img src="https://freesvg.org/img/abstract-user-flat-4.png" alt="profile-picture" height="55" width="55"></span></a>
+    @if(!authService.isAuthenticated()){
+      <a [routerLink]="['/login']" class="profile-picture"><img src="https://freesvg.org/img/abstract-user-flat-4.png" alt="profile-picture" height="55" width="55"></a>
+    }
+    @else{
+      <a [routerLink]="['/login']" class="profile-picture"><img src="https://static.vecteezy.com/system/resources/thumbnails/009/636/683/small_2x/admin-3d-illustration-icon-png.png" alt="profile-picture" height="55" width="55"></a>
+    }
     <div class="menu-icon" [ngClass]="{'not-visible': isActive}">
       <a (click)="toggleSidebar()"><span><img src="../../assets/menu-icon.png" alt="menu-icon" height="30" width="35"></span></a>
     </div>
@@ -14,23 +19,17 @@
   <nav class="sidebar" [ngClass]="{'active': isActive}">
     <div class="sidebar-content">
       <div class="close-home">
-        <a href="#"><span>Domov</span></a>
+        @if(!authService.isAuthenticated()){
+          <a [routerLink]="['/login']" class="profile-picture"><img src="https://freesvg.org/img/abstract-user-flat-4.png" alt="profile-picture" height="55" width="55"></a>
+        }
+        @else{
+          <a [routerLink]="['/']" class="profile-picture"><img src="https://static.vecteezy.com/system/resources/thumbnails/009/636/683/small_2x/admin-3d-illustration-icon-png.png" alt="profile-picture" height="55" width="55"></a>
+        }
         <span class="closebtn" (click)="toggleSidebar()" style="padding: 0 0 0 100px;"><img src="https://icon-library.com/images/cancel-icon-transparent/cancel-icon-transparent-3.jpg" height="10" width="10"></span>
       </div>
+      <a href="#"><span>Domov</span></a>
       <a href="http://ms33.hicoria.cloud:59368/" target="_blank"><span>Dynmapa</span></a>
       <a href="#"><span>Nábor</span></a>
     </div>
   </nav>
 </div>
-
-
-<!--<mat-toolbar>
-  <span>My web app</span>
-  <span class="spacer"></span>
-  @if (authService.authenticated()) {
-    <button mat-button (click)="logout()">Logout</button>
-  } @else {
-    <button mat-button [routerLink]="['/login']">Login</button>
-    <button mat-button [routerLink]="['/register']">Registration</button>
-  }
-</mat-toolbar>-->

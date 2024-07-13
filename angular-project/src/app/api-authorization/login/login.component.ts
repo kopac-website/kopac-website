@@ -4,8 +4,8 @@ import { MatFormField, MatLabel } from '@angular/material/form-field';
 import { MatInput } from '@angular/material/input';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { AuthenticationService } from '../authentication.service';
-import { AsyncPipe } from '@angular/common';
-import { Router } from '@angular/router';
+import { AsyncPipe, CommonModule } from '@angular/common';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -16,7 +16,9 @@ import { Router } from '@angular/router';
     MatInput,
     MatLabel,
     ReactiveFormsModule,
-    AsyncPipe
+    AsyncPipe,
+    CommonModule,
+    RouterLink
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
@@ -40,6 +42,7 @@ export class LoginComponent implements OnInit {
         next: (response) => {
           this.authService.storeUserCredentials(response.token, response.username);
           this.router.navigate(['/']);
+          console.log('Login successful!');
         },
         error: (err) => console.log("Oops, something went wrong", err)
       });
