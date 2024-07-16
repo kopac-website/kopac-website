@@ -18,7 +18,7 @@
   }
   .form{
     width: 350px;
-    height: 500px;
+    height: 510px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,14 +61,14 @@
   input, textarea{
     width: 100%;
     border-radius: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid gray;
     padding: 10px;
     background-color: transparent;
     color: white;
     font-size: 15px;
   }
   p, label{
-    font-size: 12px;
+    font-size: 16px;
   }
   p{
     text-align: justify;
@@ -81,12 +81,24 @@
     color: #888; 
     opacity: 1; 
   }
+  .text-length{
+    color: white;
+    padding-top: 5px;
+    float: right;
+    height: 0;
+  }
+  .empty{
+    height: 5px;
+  }
   @media (min-width: 1450px){
     label{
-      font-size: 18px;
+      font-size: 17px;
     }
-    input, textarea{
-      font-size: medium;
+    input{
+      font-size: 16px;
+    }
+    textarea{
+      font-size: 15px;
     }
   }
   @media (max-width: 730px){

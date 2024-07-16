@@ -10,7 +10,7 @@
     </div>
 
     <div class="field">
-      <label>Discord tag:</label><br>
+      <label>Discord username:</label><br>
       <div class="input-field">
       <input type="text" formControlName="dc_tag" placeholder="Minecrafter#1255" required>
     </div>
@@ -19,10 +19,16 @@
     <div class="field">
         <label>Write down a reason why we should accept your request:</label><br>
         <div class="input-field">
-        <textarea type="text" formControlName="reason" placeholder="I like vanilla survival..."></textarea>
+        <textarea type="text" formControlName="reason" maxlength="200" [(ngModel)]="userMessage" placeholder="I like vanilla survival..." (input)="updateLength()"></textarea>
     </div>
+    @if(userMessage.length > 0){
+      <div class="text-length">{{ userInputLength }} / 200</div>
+    }
+    @else{
+      <div class="empty"></div>
+    }
     </div>
 
-    <button type="submit" (click)="onSubmit()">Login</button>
+    <button type="submit" (click)="onSubmit()">Send</button>
   </form>
 </div>
